@@ -47,9 +47,7 @@ for x in another_list:
     # Converting the string value of price to float
     z=''
     for l in x[5]:
-        if l=='$' or l==',' or l=='?':
-            continue
-        else:
+        if l!='$' and l!=',' and l!='?':
             z = z+l
     z=float(z)
     
